@@ -12,7 +12,7 @@ const ContactForm = () => {
             message: message.value
         }
         let response = await fetch("https://nodemailer-ab.vercel.app/contact", {
-          
+            mode: "cors",
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8"
